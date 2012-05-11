@@ -1,1 +1,1 @@
-(blog post coming)
+Check out the accompanying [blog post on Automatic migrations with Entity Framework 4.3](http://blog.appharbor.com/2012/04/24/automatic-migrations-with-entity-framework-4-3)
