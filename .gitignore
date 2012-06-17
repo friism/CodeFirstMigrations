@@ -7,3 +7,4 @@ deploy/*
 *.cache
 TestResults/
 packages/
+Web/App_Data/data.sdf
