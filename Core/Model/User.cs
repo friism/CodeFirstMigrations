@@ -2,7 +2,7 @@
 {
 	public class User : Entity
 	{
-		public string Name { get; set; }
-		public string EmailAddress { get; set; }
+		public virtual string Name { get; set; }
+		public virtual string EmailAddress { get; set; }
 	}
 }
