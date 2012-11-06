@@ -5,11 +5,11 @@ using System.Web.Mvc;
 
 namespace Web.Controllers
 {
-	public class HomeController : Controller
+	public class HibernatedController : Controller
 	{
 		private readonly IRepository _repository;
 
-		public HomeController(EntityFrameworkRepository repository)
+		public HibernatedController(NHibernateRepository repository)
 		{
 			_repository = repository;
 		}

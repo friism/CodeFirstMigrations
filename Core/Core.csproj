@@ -37,6 +37,15 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\packages\NHibernate.3.3.2.4000\lib\Net35\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Linq">
+      <HintPath>..\packages\NHibernate.Linq.1.0\lib\NHibernate.Linq.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -52,6 +61,7 @@
     <Compile Include="Model\User.cs" />
     <Compile Include="Persistence\EntityFramework\Configuration.cs" />
     <Compile Include="Persistence\EntityFramework\Context.cs" />
+    <Compile Include="Persistence\NHibernate\NHibernateRepository.cs" />
     <Compile Include="Persistence\IRepository.cs" />
     <Compile Include="Persistence\EntityFramework\EntityFrameworkRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
