@@ -50,10 +50,10 @@
   <ItemGroup>
     <Compile Include="Model\Entity.cs" />
     <Compile Include="Model\User.cs" />
-    <Compile Include="Persistence\Configuration.cs" />
-    <Compile Include="Persistence\Context.cs" />
+    <Compile Include="Persistence\EntityFramework\Configuration.cs" />
+    <Compile Include="Persistence\EntityFramework\Context.cs" />
     <Compile Include="Persistence\IRepository.cs" />
-    <Compile Include="Persistence\Repository.cs" />
+    <Compile Include="Persistence\EntityFramework\EntityFrameworkRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

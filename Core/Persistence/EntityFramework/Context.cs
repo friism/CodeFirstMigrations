@@ -3,7 +3,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Reflection;
 
-namespace Core.Persistence
+namespace Core.Persistence.EntityFramework
 {
 	public class Context : DbContext
 	{

@@ -6,7 +6,12 @@ namespace Web.Controllers
 {
 	public class HomeController : Controller
 	{
-		private readonly IRepository _repository = new Repository(new Context());
+		private readonly IRepository _repository;
+
+		public HomeController(IRepository repository)
+		{
+			_repository = repository;
+		}
 
 		public ActionResult Index()
 		{

@@ -5,15 +5,15 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 
-namespace Core.Persistence
+namespace Core.Persistence.EntityFramework
 {
-	public class Repository : IRepository, IDisposable
+	public class EntityFrameworkRepository : IRepository, IDisposable
 	{
 		private Context _context;
 		private readonly ConcurrentDictionary<Type, object> _dbSets =
 			new ConcurrentDictionary<Type, object>();
 
-		public Repository(Context context)
+		public EntityFrameworkRepository(Context context)
 		{
 			_context = context;
 		}
