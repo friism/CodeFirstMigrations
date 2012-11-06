@@ -1,5 +1,6 @@
 ﻿using Core.Model;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 using System.Reflection;
 
@@ -9,6 +10,8 @@ namespace Core.Persistence.EntityFramework
 	{
 		protected override void OnModelCreating(DbModelBuilder modelBuilder)
 		{
+			modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+
 			ConfigureModel(modelBuilder);
 
 			Database.SetInitializer(new MigrateDatabaseToLatestVersion<Context, Configuration>());
